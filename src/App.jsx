@@ -8,7 +8,6 @@ import Account from "./components/Account";
 import Register from "./components/Register";
 import { Route, Routes } from "react-router-dom";
 
-
 function App() {
   const [token, setToken] = useState(null);
 
