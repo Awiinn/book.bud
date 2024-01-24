@@ -1,13 +1,12 @@
 import { useState } from "react";
-import bookLogo from "./assets/books.png";
+// import bookLogo from "./assets/books.png";
 import Books from "./components/Books";
-import SingleBook from "./components/SingleBook";
-import Navigations from "./components/Navigations";
-import Login from "./components/Login";
-import Account from "./components/Account";
-import Register from "./components/Register";
+// import SingleBook from "./components/SingleBook";
+// import Navigations from "./components/Navigations";
+// import Login from "./components/Login";
+// import Account from "./components/Account";
+// import Register from "./components/Register";
 import { Route, Routes } from "react-router-dom";
-
 
 function App() {
   const [token, setToken] = useState(null);
@@ -15,15 +14,15 @@ function App() {
   return (
     <>
       <div>
-        <Navigations />
-        <h1 id="logo">
+        {/* <Navigations /> */}
+        {/* <h1 id="logo">
           <img id="logo-image" src={bookLogo} />
           Library App
-        </h1>
+        </h1> */}
         <div id="main-section">
           <Routes>
             <Route index element={<Books />} />
-            <Route path={"/books/:id"} element={<SingleBook />} />
+            {/* <Route path={"/books/:id"} element={<SingleBook />} />
             <Route
               path={"/login"}
               element={<Login token={token} setToken={setToken} />}
@@ -35,7 +34,7 @@ function App() {
             <Route
               path={"/account"}
               element={<Account token={token} setToken={setToken} />}
-            />
+            /> */}
           </Routes>
         </div>
       </div>
